@@ -6,6 +6,18 @@
     <title>Pâtisserie Fares - Gâteaux Artisanaux & Desserts Gourmands</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        
+        // Remplacez G-XXXXXXXXXX par votre ID Google Analytics 4
+        // Exemple: G-ABC123XYZ45
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,7 +31,8 @@
                 <li><a href="#accueil" class="nav-link active">Accueil</a></li>
                 <li><a href="menu.html" class="nav-link">Menu</a></li>
                 <li><a href="galerie.html" class="nav-link">Galerie</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="reservation.html" class="nav-link">Réservation</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -35,7 +48,7 @@
         <div class="hero-content">
             <h1 class="hero-title">Pâtisserie Fares</h1>
             <p class="hero-subtitle">Des créations pâtissières artisanales qui subliment vos moments</p>
-            <button class="cta-button">Découvrir nos créations</button>
+            <button class="cta-button" onclick="document.getElementById('galerie').scrollIntoView({ behavior: 'smooth' })">Découvrir nos créations</button>
         </div>
         <div class="hero-background"></div>
     </section>
@@ -167,6 +180,9 @@
                 <div class="horaires-contact">
                     <a href="tel:0559461051" class="btn-primary">
                         <i class="fas fa-phone"></i> Appeler
+                    </a>
+                    <a href="reservation.html" class="btn-primary" style="margin-left: 1rem;">
+                        <i class="fas fa-calendar"></i> Réserver
                     </a>
                 </div>
             </div>
