@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Pâtisserie Fares | Conseils & Inspirations Pâtissières</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+            background: var(--light-color);
+        }
+
+        .blog-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .blog-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark-color);
+            margin-bottom: 3rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-date {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-post-title {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .blog-excerpt {
+            color: var(--dark-color);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .blog-author {
+            color: var(--dark-color);
+        }
+
+        .blog-read-more {
+            display: inline-block;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .blog-read-more:hover {
+            color: var(--accent-color);
+            transform: translateX(5px);
+        }
+
+        .blog-categories {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 50px;
+            margin: 5px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .blog-container {
+                padding: 40px 1rem;
+            }
+
+            .blog-title {
+                font-size: 2rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-birthday-cake"></i>
+                <span>Pâtisserie Fares</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <div class="blog-container">
+        <h1 class="blog-title">📝 Blog Pâtisserie Fares</h1>
+        <p class="blog-subtitle">Conseils, inspirations et actualités de nos créations pâtissières</p>
+
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x250/FF1493/FFB6C1?text=Gâteau+Mariage+Parfait" alt="Gâteau mariage" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-date">📅 12 Septembre 2024</div>
+                    <h3 class="blog-post-title">Comment choisir le gâteau parfait pour votre mariage ?</h3>
+                    <p class="blog-excerpt">Le gâteau de mariage est l'un des moments clés de votre célébration. Découvrez nos conseils pour choisir le design, les saveurs et la taille idéale...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">👨‍🍳 Chef Fares</span>
+                        <a href="#" class="blog-read-more">Lire plus →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x250/FFD700/FFA500?text=Desserts+Sans+Gluten" alt="Desserts sans gluten" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-date">📅 10 Septembre 2024</div>
+                    <h3 class="blog-post-title">Desserts sans gluten : délicieux et savoureux</h3>
+                    <p class="blog-excerpt">Vous ou vos invités êtes intolérants au gluten ? Pas de souci ! Découvrez notre sélection de créations sans gluten tout aussi délicieuses...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">👨‍🍳 Chef Fares</span>
+                        <a href="#" class="blog-read-more">Lire plus →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x250/FF69B4/FFB6C1?text=Techniques+Décoration" alt="Techniques de décoration" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-date">📅 8 Septembre 2024</div>
+                    <h3 class="blog-post-title">Les meilleures techniques de décoration en 2024</h3>
+                    <p class="blog-excerpt">Glaçage miroir, naked cake, drip cake... Découvrez les tendances actuelles en matière de décoration pâtissière et laissez-vous inspirer...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">👨‍🍳 Chef Fares</span>
+                        <a href="#" class="blog-read-more">Lire plus →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x250/FFB6C1/FF1493?text=Saveurs+Exotiques" alt="Saveurs exotiques" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-date">📅 5 Septembre 2024</div>
+                    <h3 class="blog-post-title">Voyage gustatif : saveurs exotiques en pâtisserie</h3>
+                    <p class="blog-excerpt">Mangue, passion, noix de coco... Explorez les saveurs exotiques qui subliment nos gâteaux et découvrez de nouvelles sensations gustatives...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">👨‍🍳 Chef Fares</span>
+                        <a href="#" class="blog-read-more">Lire plus →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x250/FFA500/FF8C00?text=Chocolat+Premium" alt="Chocolat premium" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-date">📅 3 Septembre 2024</div>
+                    <h3 class="blog-post-title">L'art du chocolat : sélection et utilisation premium</h3>
+                    <p class="blog-excerpt">Le chocolat est l'âme de la pâtisserie. Découvrez comment nous sélectionnons et utilisons les meilleurs chocolats pour nos créations...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">👨‍🍳 Chef Fares</span>
+                        <a href="#" class="blog-read-more">Lire plus →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/400x250/FF69B4/FFB6C1?text=Conseil+Conservation" alt="Conservation gâteau" class="blog-image">
+                <div class="blog-content">
+                    <div class="blog-date">📅 1er Septembre 2024</div>
+                    <h3 class="blog-post-title">Comment conserver votre gâteau pour qu'il reste frais ?</h3>
+                    <p class="blog-excerpt">Vous venez de commander votre gâteau ? Voici nos meilleurs conseils pour le conserver et le déguster dans les meilleures conditions...</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">👨‍🍳 Chef Fares</span>
+                        <a href="#" class="blog-read-more">Lire plus →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Pâtisserie Fares. Tous droits réservés. | 0559461051</p>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
